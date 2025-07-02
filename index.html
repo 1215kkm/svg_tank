@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>탱크</title>
+    <style>
+        * {margin: 0; padding: 0; list-style: none; text-decoration: none;}
+        .container {overflow: hidden; position: relative; background: #000;}
+        .container > div {position: absolute; left: 0; top: 0; width: 100%;}
+        .container > div.load {position: relative; }
+        .container > div.load img {position: relative; width: 100%}
+        .container > div:not(.load) {top: -50px;}
+
+        svg {width: 100%;}
+        .tire svg {stroke-dasharray: 60px 10000px; stroke-dashoffset:-160px; stroke: #09221E;}
+        .body svg {stroke-dasharray: 100px 10000px; stroke-dashoffset:-140px; stroke: #455A24;}
+        .body_deco svg {stroke-dasharray: 100px 10000px; stroke-dashoffset:-140px; stroke: #14301F;}
+        .po svg {stroke-dasharray: 80px 10000px; stroke-dashoffset:-170px; stroke: #888636; }
+        .head svg {stroke-dasharray: 55px 10000px; stroke-dashoffset:-155px; stroke: #6D7531;}
+        .hair svg {stroke-dasharray: 25px 10000px; stroke-dashoffset:-175px; stroke: #A4963D;}
+        .smoke_hole svg {stroke-dasharray: 5px 10000px; stroke-dashoffset:-165px; stroke: #334B23;}
+
+         @media screen and (max-width:840px) {
+            .container > div:not(.load) {top: 0px;}
+         }
+    </style>
+</head>
+<body>
+    
+    <div class="svg_box">
+        <div class="container">
+            <div class="load">
+                <img src="tank.svg" alt="">
+            </div>
+    
+    
+            <div class="tire">
+                <svg viewBox="0 0 1920 4205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="50.9902" width="1920" height="4097.3" fill="" stroke-width="0"/>
+                    <path d="M942.087 11.5C1024.19 221.169 1085.88 681.464 675.828 845.291C163.258 1050.08 347.278 1849.26 750.739 1965.7C1154.2 2082.14 1123.66 1781.27 995.013 1718.57C866.362 1655.88 615.573 1726.72 778.83 2267.38C942.087 2808.04 1481.93 2882.95 1718.88 2808.04C1955.83 2733.13 1794.2 2350.84 1577.61 2471.35C1361.02 2591.86 1398.47 3003.46 1506.77 3169.97C1615.06 3336.49 1456.29 4138.93 882.647 3885.29C423.736 3682.38 159.186 4005.94 84.2754 4193.08"  stroke-width="60"/>
+                </svg>
+            </div>
+            <div class="body">
+                <svg viewBox="0 0 1920 4205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="50.9902" width="1920" height="4097.3" fill="" stroke-width="0"/>
+                    <path d="M942.087 11.5C1024.19 221.169 1085.88 681.464 675.828 845.291C163.258 1050.08 347.278 1849.26 750.739 1965.7C1154.2 2082.14 1123.66 1781.27 995.013 1718.57C866.362 1655.88 615.573 1726.72 778.83 2267.38C942.087 2808.04 1481.93 2882.95 1718.88 2808.04C1955.83 2733.13 1794.2 2350.84 1577.61 2471.35C1361.02 2591.86 1398.47 3003.46 1506.77 3169.97C1615.06 3336.49 1456.29 4138.93 882.647 3885.29C423.736 3682.38 159.186 4005.94 84.2754 4193.08"  stroke-width="50"/>
+                </svg>
+            </div>
+            <div class="body_deco">
+                <svg viewBox="0 0 1920 4205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="50.9902" width="1920" height="4097.3" fill="" stroke-width="0"/>
+                    <path d="M942.087 11.5C1024.19 221.169 1085.88 681.464 675.828 845.291C163.258 1050.08 347.278 1849.26 750.739 1965.7C1154.2 2082.14 1123.66 1781.27 995.013 1718.57C866.362 1655.88 615.573 1726.72 778.83 2267.38C942.087 2808.04 1481.93 2882.95 1718.88 2808.04C1955.83 2733.13 1794.2 2350.84 1577.61 2471.35C1361.02 2591.86 1398.47 3003.46 1506.77 3169.97C1615.06 3336.49 1456.29 4138.93 882.647 3885.29C423.736 3682.38 159.186 4005.94 84.2754 4193.08"  stroke-width="30"/>
+                </svg>
+            </div>
+            <div class="po">
+                <svg viewBox="0 0 1920 4205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="50.9902" width="1920" height="4097.3" fill="" stroke-width="0"/>
+                    <path d="M942.087 11.5C1024.19 221.169 1085.88 681.464 675.828 845.291C163.258 1050.08 347.278 1849.26 750.739 1965.7C1154.2 2082.14 1123.66 1781.27 995.013 1718.57C866.362 1655.88 615.573 1726.72 778.83 2267.38C942.087 2808.04 1481.93 2882.95 1718.88 2808.04C1955.83 2733.13 1794.2 2350.84 1577.61 2471.35C1361.02 2591.86 1398.47 3003.46 1506.77 3169.97C1615.06 3336.49 1456.29 4138.93 882.647 3885.29C423.736 3682.38 159.186 4005.94 84.2754 4193.08"  stroke-width="10" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="head">
+                <svg viewBox="0 0 1920 4205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="50.9902" width="1920" height="4097.3" fill="" stroke-width="0"/>
+                    <path d="M942.087 11.5C1024.19 221.169 1085.88 681.464 675.828 845.291C163.258 1050.08 347.278 1849.26 750.739 1965.7C1154.2 2082.14 1123.66 1781.27 995.013 1718.57C866.362 1655.88 615.573 1726.72 778.83 2267.38C942.087 2808.04 1481.93 2882.95 1718.88 2808.04C1955.83 2733.13 1794.2 2350.84 1577.61 2471.35C1361.02 2591.86 1398.47 3003.46 1506.77 3169.97C1615.06 3336.49 1456.29 4138.93 882.647 3885.29C423.736 3682.38 159.186 4005.94 84.2754 4193.08"  stroke-width="35"/>
+                </svg>
+            </div>
+            <div class="hair">
+                <svg viewBox="0 0 1920 4205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="50.9902" width="1920" height="4097.3" fill="" stroke-width="0"/>
+                    <path d="M942.087 11.5C1024.19 221.169 1085.88 681.464 675.828 845.291C163.258 1050.08 347.278 1849.26 750.739 1965.7C1154.2 2082.14 1123.66 1781.27 995.013 1718.57C866.362 1655.88 615.573 1726.72 778.83 2267.38C942.087 2808.04 1481.93 2882.95 1718.88 2808.04C1955.83 2733.13 1794.2 2350.84 1577.61 2471.35C1361.02 2591.86 1398.47 3003.46 1506.77 3169.97C1615.06 3336.49 1456.29 4138.93 882.647 3885.29C423.736 3682.38 159.186 4005.94 84.2754 4193.08"  stroke-width="20"/>
+                </svg>
+            </div>
+            <div class="smoke_hole">
+                <svg viewBox="0 0 1920 4205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="50.9902" width="1920" height="4097.3" fill="" stroke-width="0"/>
+                    <path d="M942.087 11.5C1024.19 221.169 1085.88 681.464 675.828 845.291C163.258 1050.08 347.278 1849.26 750.739 1965.7C1154.2 2082.14 1123.66 1781.27 995.013 1718.57C866.362 1655.88 615.573 1726.72 778.83 2267.38C942.087 2808.04 1481.93 2882.95 1718.88 2808.04C1955.83 2733.13 1794.2 2350.84 1577.61 2471.35C1361.02 2591.86 1398.47 3003.46 1506.77 3169.97C1615.06 3336.49 1456.29 4138.93 882.647 3885.29C423.736 3682.38 159.186 4005.94 84.2754 4193.08"  stroke-width="15"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+    $(window).on('scroll', function() {
+        var scrollTop = $(window).scrollTop();
+        var docHeight = $(document).height() - $(window).height();
+        var scrollRatio = docHeight > 0 ? scrollTop / docHeight : 0;
+    
+        var configs = [
+            { selector: '.tire svg',   start: -160, end: -1160 },
+            { selector: '.body svg',   start: -140, end: -1140 },
+            { selector: '.body_deco svg',   start: -140, end: -1140 },
+            { selector: '.po svg',   start: -170, end: -1170 },
+            { selector: '.head svg',   start: -155, end: -1155 },
+            { selector: '.hair svg',   start: -175, end: -1175 },
+            { selector: '.smoke_hole svg',   start: -165, end: -1165 }
+        ];
+    
+        configs.forEach(function(cfg) {
+            var $svg = $(cfg.selector);
+            if ($svg.length) {
+                var offset = cfg.start + (cfg.end - cfg.start) * scrollRatio * 8.5;
+                $svg.css('stroke-dashoffset', offset + 'px');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
